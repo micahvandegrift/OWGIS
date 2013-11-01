@@ -7,10 +7,10 @@
 <%-- 
     This page contains all the links to the CSS, and the javascript 
 --%>
-		<link rel="icon" href="${basepath}/common/images/icon/PageIcon.ico" type="image/x-icon" />
+		<link rel="icon" href="${basepath}/common/images/icon/Gulf.ico" type="image/x-icon" />
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
         <meta name="Description" content="Deep-C atlas" />
-        <meta name="Keywords" content="OWGIS, GIS, WebGIS " />
+        <meta name="Keywords" content="DeepC, GIS, COAPS, map viewer, Deep-C, Oceanography" />
 
         <link href="${basepath}/common/CSS/mapStyle.css" rel="stylesheet" type="text/css"/>
         <link href="${basepath}/common/CSS/Palettes.css" rel="stylesheet" type="text/css"/>
