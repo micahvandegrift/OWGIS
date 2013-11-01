@@ -1,0 +1,115 @@
+
+div.leftFoot{
+	position:absolute;
+	bottom:1%;
+	left:2%;
+	z-index:1002;
+	display:inline;
+	color:black;
+	opacity:0.7;
+}
+
+/* Main title */
+div.mapTitle{    
+	color: #040;
+	position:absolute;	
+	top:55px;
+	width:100%;
+	z-index:1000;
+	display:inline;
+	text-align:center;
+	left:0%;
+	
+}
+
+
+#pTitleText
+{	
+	text-align:center;
+        color:white;
+	margin:.5em 0 .5em 0;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	font-size:18px;   
+	border-radius: 10px;	
+	
+        filter: Shadow(Color=#000000, 	
+			Direction=135, 
+			Strength=4);
+	
+	
+}
+
+
+.ie_shadow{
+    
+color:white;
+font-weight: bold;
+    
+}
+
+
+
+#emailText{
+ 
+    color:white;
+        	
+}
+
+
+
+p /* This is the default font type for the letters in the page */
+{
+	color:black;
+	font-size:18px;    
+	margin:.5em 0 .5em 0;
+	border-radius: 10px;
+	
+	padding-bottom: 3px;
+	padding-top: 3px;
+        
+        
+       
+        
+}
+.invShadow{ /* This font type inverts the color of the font and the shadow */
+	font-size:13px;    
+	color:#DCDCDC;
+	margin:.5em 0 .5em 0;
+	border-radius: 10px;
+	
+	font-weight: bold;
+	
+	margin:.5em 0 .5em 0;
+}
+.palMinMax{
+	font-size:13px;
+}
+.footNote{
+	font-size:12px;    
+}
+
+
+/* Palette related fields*/
+
+#palette, div.palettesDiv{
+    color:white;
+    background-color:white;
+    border:solid black 2px;
+}
+
+#palettes-div
+{    
+    background-color: white;    
+    border:solid black 2px;
+}
+
+
+
+.buttonStyle .mainMenu, .defaultOptions, .mainMenuOption{
+    
+    border-radius:1px;
+    
+    
+    
+}

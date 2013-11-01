@@ -1,0 +1,93 @@
+/* 
+    Document   : OptionalLayersMenu
+    Created on : May 14, 2013, 11:42:18 AM
+    Author     : Olmo Zavala Romero
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* optional layers such as us state, DeepC, etc
+* main window
+*/
+#optionalMenuParent
+{
+    top:70px;
+    left:73%;
+    text-align:left;
+	background-color: black;
+}
+
+/* Title for optional layers draggable window */
+.optionalTitle
+{ }
+
+/* Subtable that contains the optional layers */
+table.vectorLayer{
+    /*  background-image:url('../images/transBack.png');*/
+	width:185px;
+}
+td.vectorLayer{
+	padding: 0px;
+	margin: 0px;
+}
+
+/*Root list of optional layers*/
+.opt_lay_list_root{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+
+.opt_lay_list{
+	list-style-type: none;
+	padding-left: 10px;
+	margin: 0px;
+	display: none;
+}
+
+/*Single menu on the optional layers menu*/
+.opt_lay_menu{
+}
+
+/*A title in the optional menu layers tree */
+.opt_lay_title{
+    font-size:12px;
+	font-weight: bold;
+	padding: 0px;
+	margin: 5px 0px 0px 0px;
+	cursor: pointer;
+	color: #CDF1FA;
+}
+
+/*Default format for each menu as paragraph*/
+.opt_lay_par{
+	width: 100%;
+	height: 20px;
+	margin: 0px;
+	color: white;
+    font-size:11px;
+    text-shadow: none;
+}
+
+/* This are also plus and minus buttons, but are
+smaller and doesn't have background. Currently are used
+for transparency in the optional layers. */
+.minusButtonSmall, .plusButtonSmall
+{
+    font-size: 13px; 
+    font-weight: bolder;
+    vertical-align: top;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+.minusButtonSmall
+{
+    color: gray;
+}
+
+/* Next line is need it to remove extra space that Firefox puts into buttons */
+button::-moz-focus-inner { margin: -1px; padding: 0; }

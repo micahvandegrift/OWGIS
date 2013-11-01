@@ -1,0 +1,400 @@
+/* Default style for the page */
+body {
+    font-family:Tahoma, Verdana, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #296E8D;
+    overflow:hidden;
+}
+
+/* Used to avoid selecting text (Chrome)*/
+::selection{
+	background: transparent;
+}
+/* Used to avoid selecting text (Firefox)*/
+::-moz-selection{
+	background: transparent;
+}
+
+treeVectMenu{
+	color: red;
+}
+
+.liVect{
+}
+
+/* Div where the specific data of the layers are displayed */
+div.layersData{
+    position:absolute;
+    z-index:1003;
+    display:inline;
+    width: 220px;
+    min-height:0px;
+    padding-bottom:2px;
+    padding-left:2px;
+    text-align:left;
+    background-image:url('../images/transBack.png');
+}
+/* Main div for user menu options. topmenu */
+div.layersMenu{
+    background-image:url('../images/transBack.png');
+    top:0px;
+    left:0px;
+    z-index:1002;
+    position:absolute;
+    border-bottom:white 1px solid;
+    height:40px;
+    width:100%;
+}
+/* Left fotter */
+div.leftFoot{
+    position:absolute;
+    bottom:1%;
+    right:1%;
+    z-index:1000;
+    display:inline;
+    color:black;
+    opacity:0.7;
+}
+/* Main title */
+div.mapTitle{
+    position:absolute;
+    width: 100%;
+    top:40px;
+    left:0%;
+    z-index:1000;
+    display:inline;
+    text-align:center;
+    pointer-events: none;
+}
+
+/*These are the plus and minus images of the color ranges, 
+and also the plus and minus buttons of the transparency and
+elevation options.*/
+.minusButton, .plusButton
+{
+    font-size: 12px; 
+    font-weight: bold;
+    vertical-align: top;
+    padding-left:2px;
+    padding-right:2px;
+    padding-top:0px;
+    padding-bottom: 0px;
+}
+
+
+.middleText
+{
+    font-size:12px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+/* The 'MainMenu'(base layers dropdowns) container */
+#mainMenuParent{
+    top: 30px;
+    left: 50px;
+}
+
+/* Table that contains the menu for the base layers*/
+t_mainMenu{
+    margin:.5em 0 .5em 0;
+	background-color: transparent;
+}
+
+/*part of the color pallete */
+td.waitBack{
+    /*	border-radius: 10px;*/
+    /*	background-image:url('../images/transBack.png'); */
+    valign: up;
+}
+
+input[type=text]{
+    font-size: 11px;
+}
+
+p /* This is the default font type for the letters in the page */
+{
+    color:black;
+    font-size:18px;
+    text-shadow: 0px -1px 5px #DCDCDC,     /* north      */
+        0px  1px 5px #DCDCDC,     /* south      */
+        -1px  0px 5px #DCDCDC,     /* west       */
+        1px  0px 5px #DCDCDC,     /* east       */
+        -1px -1px 5px #DCDCDC,     /* north-west */
+        -1px  1px 5px #DCDCDC,     /* north-east */
+        1px -1px 5px #DCDCDC,     /* south-west */
+        1px  1px 5px #DCDCDC;     /* south-east */
+
+    margin:.5em 0 .5em 0;
+}
+
+/*title on top of calendar */
+.calTitle{
+    font-size:13px;
+        text-shadow: 0px -1px 5px #DCDCDC,     /* north      */
+        0px  1px 5px #DCDCDC,     /* south      */
+        -1px  0px 5px #DCDCDC,     /* west       */
+        1px  0px 5px #DCDCDC,     /* east       */
+        -1px -1px 5px #DCDCDC,     /* north-west */
+        -1px  1px 5px #DCDCDC,     /* north-east */
+        1px -1px 5px #DCDCDC,     /* south-west */
+        1px  1px 5px #DCDCDC;     /* south-east */
+}
+
+/* This is the default style for letters inside a window with black background*/
+.noShadowDarkBack{
+    font-size:12px;
+    color:#DCDCDC;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+.defShadow{ /* This font type inverts the color of the font and the shadow */
+    font-size:13px;
+ 	color:black;
+    text-shadow: 0px -1px 5px #DCDCDC,     /* north      */
+        0px  1px 5px #DCDCDC,     /* south      */
+        -1px  0px 5px #DCDCDC,     /* west       */
+        1px  0px 5px #DCDCDC,     /* east       */
+        -1px -1px 5px #DCDCDC,     /* north-west */
+        -1px  1px 5px #DCDCDC,     /* north-east */
+        1px -1px 5px #DCDCDC,     /* south-west */
+        1px  1px 5px #DCDCDC;     /* south-east */
+
+    margin:.5em 0 .5em 0;
+}
+
+.invShadow{ /* This font type inverts the color of the font and the shadow */
+    font-size:13px;
+    color:#DCDCDC;
+    font-weight: bold;
+    text-shadow: 0px -1px 5px #000000,     /* north      */
+        0px  1px 5px #000000,     /* south      */
+        -1px  0px 5px #000000,     /* west       */
+        1px  0px 5px #000000,     /* east       */
+        -1px -1px 5px #000000,     /* north-west */
+        -1px  1px 5px #000000,     /* north-east */
+        1px -1px 5px #000000,     /* south-west */
+        1px  1px 5px #000000;     /* south-east */
+
+    margin:.5em 0 .5em 0;
+
+    /* The next lines are for IE */
+    /*	zoom: 1;*/
+    /*	filter:progid:DXImageTransform.Microsoft.Chroma(Color=#000000)*/
+    /*		progid:DXImageTransform.Microsoft.Glow(Strength=5, Color=#000000);*/
+}
+.footNote{
+    font-size:12px;
+    display:inline;
+    padding-bottom: 5px;
+}
+
+
+.helpClose{
+
+    float:right;
+
+
+}
+
+/* Buttons style, default style for buttons (used in transparency and xasis),
+and also the mainMenu dropdown options*/
+.buttonStyle, .mainMenu, .defaultOptions, .mainMenuOption {
+    -moz-box-shadow:inset 0px 1px 0px 0px #0f020f;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #0f020f;
+    box-shadow:inset 0px 1px 0px 0px #0f020f;
+    /*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #444444), color-stop(1, #a396a3) );*/
+    /*background:-moz-linear-gradient( center top, #444444 5%, #a396a3 100% );*/
+    /*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#a396a3');*/
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #555555), color-stop(1, #555555 ) );
+    background:-moz-linear-gradient( center top, #555555 5%, #555555 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#555555', endColorstr='#555555');
+    background-color:grey;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #080708;
+    display:block;
+    color:#ffffff;
+    font-family:Calibri, Arial, sans-serif;
+    font-size:13px;
+
+    padding:6px 10px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #0a010a;
+}.buttonStyle:hover, .mainMenu:hover, .defaultOptions:hover, .mainMenuOption:hover{
+    /*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a396a3), color-stop(1, #444444) );*/
+    /*background:-moz-linear-gradient( center top, #a396a3 5%, #444444 100% );*/
+    /*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#a396a3');*/
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #333333), color-stop(1, #333333) );
+    background:-moz-linear-gradient( center top, #333333 5%, #333333 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#333333');
+    background-color:#a396a3;
+}.buttonStyle:active, .defaultOptions:active{
+    position:relative;
+    top:1px;
+}
+/*Extra styling for the 'transparency' and 'depth buttons'*/
+.defaultOptions{
+    font-size:15px;
+    padding:1px 5px;
+}
+
+/* Extra styling for the mainlayer dropdowns */
+.mainMenu {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #AAAAAA), color-stop(1, #AAAAAA ) );
+    background:-moz-linear-gradient( center top, #AAAAAA 5%, #AAAAAA 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#AAAAAA', endColorstr='#AAAAAA');
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:4px;
+    border:1px solid #080708;
+    display:block;
+    font-family:Calibri, Arial, sans-serif;
+    font-size:13px;
+    width: 120px;
+    height: 2em;
+    color:black;
+
+    padding:3px 5px;
+    text-shadow:0px 0px 0px #FFFFFF;
+}.mainMenu:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #DDDDDD), color-stop(1, #DDDDDD) );
+    background:-moz-linear-gradient( center top, #DDDDDD 5%, #DDDDDD 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#DDDDDD', endColorstr='#DDDDDD');
+}
+
+/*It is used for normal text or paragraph (with shadows)
+but the size of the font is larger */
+.bigFontSize{
+    font-size: 30px;
+}
+
+.terco
+{
+    display:inline;
+}
+
+/* area that holds loading button*/
+.loading_area
+{
+    border:solid red;
+    z-index:1008;
+    position:absolute;
+    top:300px;
+    left:300px;
+}
+
+/* Defines the position of the draggable window that
+selects the zaxis value*/
+#zaxis_selector
+{
+    top:45px;
+    left:40%;
+
+    display:none;
+    visibility: hidden;
+	background-color: black;
+}
+
+
+
+.linkElevPageDef{
+    font-size: 16px;
+    color: #F9FFCB;
+}
+.linkElevPageSelected{
+    font-size: 16px;
+    color: #BBA364;
+}
+
+/*Style for the 'contact' text. At the bottom of the page*/
+#emailText{
+    font-size: 10px;
+    color:blue;
+    text-shadow: 0px -1px 5px #DCDCDC,     /* north      */
+        0px  1px 5px #DCDCDC,     /* south      */
+        -1px  0px 5px #DCDCDC,     /* west       */
+        1px  0px 5px #DCDCDC,     /* east       */
+        -1px -1px 5px #DCDCDC,     /* north-west */
+        -1px  1px 5px #DCDCDC,     /* north-east */
+        1px -1px 5px #DCDCDC,     /* south-west */
+        1px  1px 5px #DCDCDC;     /* south-east */
+
+    margin:.5em 0 .5em 0;
+}
+
+
+/* This imageless css button was generated by CSSButtonGenerator.com */
+
+
+/* This is the CSS for a default dragabble window. It should be used
+for the main layers, the color palettes, the optional layers, the calendars etc.*/ 
+.draggableWindow{
+	/*background-color:black;*/
+	position:absolute;
+	z-index:1008;
+	color: white;    
+	border-radius:10px;
+	margin-top: 2em;
+	border:solid 1px white;
+	padding:3px;
+	cursor: move;
+    opacity:0.95;
+	position:absolute;
+	border-spacing: 5px 2px;
+    font-size: 12px;
+}
+
+.maximizeButton, .minimizeButton {
+	background-color:#ffffff;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#333333;
+	font-family:arial;
+	font-size:7px;
+	font-weight: bold;
+	/*padding:0px 3px;*/
+	text-decoration:none;
+	cursor:pointer;
+	float: right;
+}
+
+.minimizeButton:hover , .maximizeButton:hover {
+	background-color:#f6f6f6;
+}
+
+
+.minimizeButton:active, maximizeButton:active{
+	position:relative;
+	top:1px;
+}
+
+
+.minimizeButton
+{
+	padding:0px 4px;
+
+
+}    
+
+#optionalsMinimize, #calendarsMinimize, #mainMenuMinimize
+{
+    z-index: 1008;
+    text-align:center;
+    background-color:black;
+    bottom:-10px;
+    display:none;
+    cursor: default;
+}
+
+/* Simple class to avoid margin of a paragraph */
+.smallMargin{
+	margin: 2px;
+}

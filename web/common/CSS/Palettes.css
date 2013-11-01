@@ -1,0 +1,78 @@
+/* 
+    Document   : Palettes
+    Created on : Nov 6, 2012, 4:11:25 PM
+    Author     : olmozavala
+    Description:
+		Should have all the styling related with the palettes and
+		range of colors.
+*/
+
+/* table that contains current palette and the color range*/
+/* IMPORTANT we can't use ''right' because the windows doesn't drag properly*/
+#palette{
+	top: 245px;
+	display:none;
+}
+#palette.th{
+	padding: 0;
+}
+
+/* Div of the optional palettes div */
+/* Color palettes that pops with all the optional palettes */ 
+/* IMPORTANT we can't use ''right' because the windows doesn't drag properly*/
+#palettes-div{
+	top: 245px;
+	visibility: hidden;
+}
+
+/* Id of the div that contains both Palettes windows */
+#palettesParent
+{
+	position:absolute;
+	top:60px;
+	right: 10px;
+	width:200px;
+	z-index:1008;
+	visibility: hidden;
+}
+
+#imgPalette{
+}
+
+#palettesHover{
+	display:none;
+}
+
+/*
+Table that contains all the optional palettes
+*/
+#palettesTable{
+    cursor: pointer;
+}
+
+#palettesTable img:active{
+   position:relative;
+    top:2px;
+}
+
+
+
+
+/* Reduces the default padding for the button style. This 
+style is being used by the buttons inside the colorPaleteRangeOptions*/
+.reducedPadding{
+    padding: 3px 5px 3px;
+}
+/* This is a table that contains the header text and buttons
+of the optional palettes table*/
+#optionalPalettesHeader{	
+	width: 100%;
+}
+
+/* '+' and '-' Paragraph inside the color range palettes window */
+.palMinMax{
+	padding: 0;
+	margin: 0;
+    font-size:13px;
+}
+

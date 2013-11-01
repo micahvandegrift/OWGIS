@@ -1,0 +1,106 @@
+/* 
+    Document   : MapInstructions
+    Created on : Feb 8, 2013, 4:19:39 PM
+    Author     : olmozavala
+    Description:
+	 This CSS contains all the styling for the Use Guide instructions and
+		the hover texts
+*/
+
+/* Help Instructions display container */
+.helpInstructionsParentTable
+{
+    border:solid black;
+    position:absolute;
+    left:50px;
+    visibility:hidden;
+    z-index:1009;
+    height:700px;
+    right:200px;
+    top:100px;
+    border-radius: 10px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border:solid white 2px;
+    background-color: black;
+    font-size: 13px;
+    color:white;
+    width:70%;
+    cursor:move;
+    text-align:left;
+
+    overflow-x:hidden;
+    overflow-y:auto;    
+
+}
+.helpInstructionsParentTable td{ }
+.helpInstructionsParentTable th{
+    text-align:center;
+    font-size:16px;
+    font-weight: bold;
+    padding:7px;
+    margin:7px;
+	vertical-align: top;
+	text-align:center;
+}
+.helpInstructionsContent{
+	overflow-x: auto;
+}
+
+/*part of help instructions */
+#align_left td{
+    text-align: left;
+    border-bottom: dashed grey 1px;
+}
+
+
+/* part of help instructions*/
+.no_hover{
+    background-color: #111;
+
+}
+
+
+.commonHover{
+    top:45px;
+    position:absolute;
+	border:1px solid;
+    padding:5px;
+    font-size: 11px;
+    background-image:url('../images/transBack.png');
+    background-color: darkkhaki;
+
+    z-index:1009;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius:10px;
+	text-align: left;
+	min-width:150px;
+    font-size: 12px;
+	color:black;
+    display:none;
+}
+
+#mainMenuParentHover{ top: 20px; left: 140px;}
+#optionalLayersParentHover{ top: 0px; right:210px}
+#transParentHover{ }
+#elevationParentHover{ }
+#transectParentHover{}
+#palettesHover{ }
+#mainKmlParentHover { }
+
+.helpChild
+{
+    font-weight:bold;
+}
+
+#helpHoverSpan{
+	position: absolute;
+	top:4px;
+	right:0px;
+	display: inline;
+    z-index:1019;
+}
+#helpIconHover{
+	right:10px;
+}
