@@ -29,7 +29,7 @@
        
 						<xs:sequence maxOccurs="unbounded">
        
-							<xs:element name="layer" minOccurs="1"> <!--Menuconf/BackgroundLayers/layer -->
+							<xs:element name="layer" minOccurs="0"> <!--Menuconf/BackgroundLayers/layer -->
 								<xs:complexType mixed="true">
           
 									<xs:attribute name="name" type="xs:string" use="required"></xs:attribute>
@@ -119,7 +119,7 @@
                   
 						<xs:sequence maxOccurs="unbounded">
        
-							<xs:element name="layer" minOccurs="1"> <!--Menuconf/BackgroundLayers/layer -->
+							<xs:element name="layer" minOccurs="0"> <!--Menuconf/BackgroundLayers/layer -->
 								<xs:complexType mixed="true">
           
 									<xs:attribute name="name" type="xs:string" use="required"></xs:attribute>
@@ -217,10 +217,13 @@
 				<xs:element name="MainLayers" minOccurs="0"> <!--MainLayers (root's child) level -->
        
 					<xs:complexType mixed="true">
-                        <xs:sequence maxOccurs="unbounded"><!-- There can be multiple MainLayers element on the xml file -->
-							<xs:element name="layer" minOccurs="1"> <!--Internal element of Main layers is a layer -->
+                  
+						<xs:sequence maxOccurs="unbounded">
+       
+							<xs:element name="layer" minOccurs="0"> <!--Menuconf/MainLayers/layer -->
 								<xs:complexType mixed="true">
-                                    <xs:attribute name="name" type="xs:string" use="required"></xs:attribute>
+          
+									<xs:attribute name="name" type="xs:string" use="required"></xs:attribute>
 									<xs:attribute name="Menu" type="xs:string"></xs:attribute>
 									<xs:attribute name="featureInfo" type="xs:string"></xs:attribute>
 									<xs:attribute name="title" type="xs:string"></xs:attribute>

@@ -1,0 +1,29 @@
+<MenuConf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+    <MenuEntries>
+        <MenuEntry ID="menuId" EN="Menu ENG txt" ES="Menu txt in spanish"/>
+        <MenuEntry ID="menuId2" EN="Precipitation" ES="Menu2 txt in spanish"/>
+        <MenuEntry ID="menuId3" EN="US States" />
+        <MenuEntry ID="menuId4" EN="Gulf Temp." />
+    </MenuEntries>
+    <BackgroundLayers BBOX="-180,90,-90,180" server="http://viewer.coaps.fsu.edu/geoserver/wms">
+        <layer name="comm:pyrResult512" featureInfo="comm:gebco"/>
+    </BackgroundLayers>
+    <MainLayers BBOX="-180,90,-90,-180" server="http://viewer.coaps.fsu.edu/geoserver/wms" >  
+        <layer Menu="menuId,menuId2" name="se_clim:TotPrec2010Jan"  EN="Title: Prec" ES="ESP " />
+        <layer Menu="menuId,menuId3" name="comm:states" style="polygon" EN="US States" ES="ESP " 
+            cqlcols="STATE"
+            />
+    </MainLayers>
+    <MainLayers BBOX="-125.02083333333,24.062499999999996,-66.47916666198,49.937500002069996" 
+                format="image/gif"  server="http://viewer.coaps.fsu.edu/ncWMS/wms"
+                tiled="true" ncWMS="true" mincolor="10" maxcolor="34" >  
+        <layer Menu="menuId,menuId4" EN="Gulf of Mexico temperature" name="hycom2013/temperature"  />
+    </MainLayers>
+    
+    <VectorLayers BBOX="-180,90,-90,180" server="http://viewer.coaps.fsu.edu/geoserver/wms"  vectorLayer="true"> 
+        <layer Menu="menuId3" name="comm:states" selected="true" />
+    </VectorLayers>
+</MenuConf>
+
+
+

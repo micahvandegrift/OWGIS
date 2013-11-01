@@ -1,0 +1,22 @@
+<!--This documemnt adds the layers of the 54 run of the HYCOM model
+	more info about the data can be found at http://hycom.org/dataserver/goml0pt04/expt-02pt2
+-->
+
+<MenuConf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+	<MenuEntries>
+		<MenuEntry ID="hycom54" EN="54-year Exp" ES="54-year Exp"/>
+		<MenuEntry ID="first18" EN="First 18 years" ES="Primeros 18 anos"/>
+	</MenuEntries>
+	
+    <MainLayers BBOX="-98,16.588657379151,-76.400024414064,33.463638305665"
+                format="image/gif"  server="http://viewer.coaps.fsu.edu/ncWMS/wms"
+                tiled="true" ncWMS="true" mincolor="10" maxcolor="34" max_time_range="month">  
+        <layer Menu="omodel,hycom,hycom54,first18,Temp" EN="HYCOM " ES="HYCOM " 
+			   name="54yearHycom_R1t/temperature"  />
+        <layer Menu="omodel,hycom,hycom54,first18,Salinity" EN="HYCOM " ES="HYCOM " 
+			   name="54yearHycom_R1s/salinity"  mincolor="30" maxcolor="40" />
+        <layer Menu="omodel,hycom,hycom54,first18,SeaVel" EN="HYCOM " ES="HYCOM " 
+			   name="54yearHycom_R1v/sea_water_velocity"  />
+    </MainLayers>
+
+</MenuConf>
