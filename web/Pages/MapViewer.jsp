@@ -91,29 +91,31 @@ This is the main jsp file that forms the html webpage. It contains the skeleton 
                 </div>
             </c:if>
 
-				<!-- Foot page --> 
-				<div id="pieDePaginaIzq" class="leftFoot">
-					&nbsp;
-                    <a  href="#">
-                        <img border="0" src="${basepath}/common/images/Logos/Logo.png" alt="Logo" width="30" height="30" /></a>
+
+
+            <!-- Foot page --> 
+            <div id="pieDePaginaIzq" class="leftFoot">
+                &nbsp;
+                <a  href="http://www.deep-c.org/">
+                    <a  href="http://www.fsu.edu/">
+                        <img border="0" src="${basepath}/common/images/Logos/FSU.png" alt="FSU" width="30" height="30" /></a>
                     &nbsp;
-                    <a  href="#">
-                        <img border="0" src="${basepath}/common/images/Logos/Logo.png" alt="Logo" width="30" height="30" /></a>
+                    <a  href="http://coaps.fsu.edu/">
+                        <img border="0" src="${basepath}/common/images/Logos/COAPSoz.png" alt="COAPS" width="30" height="30" /></a>
                     &nbsp 
-                    <a  href="#">
-                        <img border="0" src="${basepath}/common/images/Logos/Logo.png" alt="Logo" width="30" height="30" /></a>
+                    <a  href="http://www.deep-c.org/">
+                        <img border="0" src="${basepath}/common/images/Logos/DeepC.png" alt="DeepC" width="51" height="30" /></a>
                     &nbsp 
-                    <a  href="#">
-                        <img border="0" src="${basepath}/common/images/Logos/Logo.png" alt="Logo" width="30" height="30" /></a>
+                    <a  href="http://www.noaa.gov/">
+                        <img border="0" src="${basepath}/common/images/Logos/NOAA.png" alt="NOAA" width="30" height="30" /></a>
 
-                    <a  href="#">
-						<p class="footNote" align="left">
-							&nbsp 
-							&copy; <script language="javascript">document.write(getDate("%Y"));</script>.  <fmt:message key="main.copyr" /> &nbsp;
-						</p></a>
-                    <a id="emailText" href="#"> <fmt:message key="main.contact" /></a>
-				</div>
-
+                    <a  href="http://deep-c.org/copyright">
+                    <p class="footNote" align="left">
+                        &nbsp 
+                        &copy; <script language="javascript">document.write(getDate("%Y"));</script>.  <fmt:message key="main.copyr" /> &nbsp;
+                    </p></a>
+                    <a id="emailText" href="mailto:osz09@fsu.edu, aahmed@coaps.fsu.edu"> <fmt:message key="main.contact" /></a>
+            </div>
         </form>
 
         <!-- minimizable windows file -->
