@@ -41,6 +41,8 @@ Step 3. Build your war file:
 
 Step 3. Deploy the project in your servlet container, like [Tomcat](http://tomcat.apache.org/)
 
+    cp OWGISTemplate.war /usr/local/tomcat/webapps
+
 Step 4. Test your OWGIS Template normally at <http://localhost:8080/OWGISTemplate/mapviewer>
 
 ## Netbeans
@@ -52,7 +54,7 @@ Step 1. Clone the repository:
 
 Step 2. Create new project in Netbeans
 
-    Delete existing `build.xml` file
+    Delete `buildTemplate.xml` file
     File -> New Project (Next)
     Java Web -> Web Application with Existing Sources (Next)
     Point to the root folder of OWGIS and Change project name to 'OWGISTemplate' (Next)
