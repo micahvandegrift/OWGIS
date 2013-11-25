@@ -18,7 +18,7 @@ The default template of OWGIS can be tested
 <a href="http://owgis.servehttp.com:8080/OWGISTemplate/mapviewer"> here</a>,
 and it will look similar to the following screenshot.
 <img src="http://owgis.org/images/galery/DemoConfig.png"  title="OWGIS template">
-<a href="https://travis-ci.org/driftyco/ionic"><img src="http://owgis.org/images/galery/DemoConfig.png" data-bindattr-164="164" title="Build Status Images"></a>
+![alt tag](http://owgis.org/images/galery/DemoConfig.png)
 
 Each WebGIS site is configured by two types of files, a 
 Java properties file stored at `web/WEB-INF/conf/MapViewConfig.properties`
