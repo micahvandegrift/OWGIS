@@ -38,16 +38,16 @@ Step 1. Clone the repository:
     git clone git@github.com:olmozavala/OWGIS.git
 
 Step 2. Create new project in Netbeans
-+File -> New Project (Next)
-+Java Web -> Web Application with Existing Sources (Next)
-+Point to the root folder of OWGIS and
-+Change project name to 'OWGISTemplate' (Next)
-+Select your servlet container  (Next)
-+If not set by default set:
-+Web Pages Folder -> web
-+Web-INF Folder  -> WEB-INF
-+Libraries Folder -> libraries (Next)
-+Source package folders -> src/java (Finish)
++ File -> New Project (Next)
++ Java Web -> Web Application with Existing Sources (Next)
++ Point to the root folder of OWGIS and
++ Change project name to 'OWGISTemplate' (Next)
++ Select your servlet container  (Next)
++ If not set by default set:
++ Web Pages Folder -> web
++ Web-INF Folder  -> WEB-INF
++ Libraries Folder -> libraries (Next)
++ Source package folders -> src/java (Finish)
 
 Step 3. Common Netbeans configuration (Project Properties)
 
