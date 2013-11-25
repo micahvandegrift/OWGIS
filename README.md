@@ -15,9 +15,11 @@ by an WMS server like [Geoserver](http://geoserver.org)
 or by an [ncWMS](http://www.resc.rdg.ac.uk/trac/ncWMS/) sever. 
 
 The default template of OWGIS can be tested 
-<a href="http://owgis.servehttp.com:8080/OWGISTemplate/mapviewer"> here</a>,
+
 and it will look similar to the following screenshot.
+<a href="http://owgis.servehttp.com:8080/OWGISTemplate/mapviewer">
 <img src="http://owgis.org/images/galery/DemoConfig.png"  title="OWGIS template">
+</a>,
 
 Each WebGIS site is configured by two types of files, a 
 Java properties file stored at `web/WEB-INF/conf/MapViewConfig.properties`
