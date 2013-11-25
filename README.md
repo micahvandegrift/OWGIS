@@ -33,11 +33,11 @@ Step 1. Clone the repository:
  
     git clone git@github.com:olmozavala/OWGIS.git
 
-Step 2. Edit `build.xml` to match your paths, mainly the Tomcat folder.
+Step 2. Edit `buildTemplate.xml` to match your paths, mainly the Tomcat folder.
 
 Step 3. Build your war file:
     
-    ant -f build dist
+    ant -f buildTemplate.xml dist
 
 Step 3. Deploy the project in your servlet container, like [Tomcat](http://tomcat.apache.org/)
 
