@@ -38,9 +38,10 @@ Step 1. Clone the repository:
     git clone git@github.com:olmozavala/OWGIS.git
 
 Step 2. Create new project in Netbeans
-+ File -> New Project (Next)
-+ Java Web -> Web Application with Existing Sources (Next)
-+ Point to the root folder of OWGIS and
+
+    File -> New Project (Next)
+    Java Web -> Web Application with Existing Sources (Next)
+    Point to the root folder of OWGIS and
  Change project name to 'OWGISTemplate' (Next)
 + Select your servlet container  (Next)
 + If not set by default set:
@@ -51,8 +52,8 @@ Step 2. Create new project in Netbeans
 
 Step 3. Common Netbeans configuration (Project Properties)
 
-    + Sources -> Change source to JDK 7
-    + Run -> Relative URL -> /mapviewer (Ok):w
+    Sources -> Change source to JDK 7
+    Run -> Relative URL -> /mapviewer (Ok):w
 
 Once OWGIS template is working just modify the configuration
 files for you convenience.
