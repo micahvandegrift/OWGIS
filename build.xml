@@ -1,4 +1,4 @@
-<project name="My Project" default="help" basedir=".">
+<project name="OWGIS Template" default="help" basedir=".">
     <!-- Define the properties used by the build -->
     <property name="app.name"      value="OWGISTemplate"/>
     <property name="app.version"   value="1.0.0"/>
@@ -65,12 +65,19 @@
             <fileset dir="${src.home}" excludes="**/*.java"/>
         </copy>
 
+        <copy  todir="${work.home}/WEB-INF/lib">
+            <fileset dir="${lib.home}"/>
+        </copy>
+
+        <copy  todir="${work.home}/WEB-INF/classes/com/mapviewer/messages">
+            <fileset dir="${src.home}/java/com/mapviewer/messages/"/>
+        </copy>
     </target>
 
 
     <target name="dist" depends="compile"
         description="Create WAR file for binary distribution">
-        <jar jarfile="${dist.home}/${app.name}-${app.version}.war"
+        <jar jarfile="${dist.home}/${app.name}.war"
             basedir="${work.home}"/>
     </target>
 
