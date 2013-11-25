@@ -37,7 +37,7 @@ Step 2. Edit `build.xml` to match your paths, mainly the Tomcat folder.
 
 Step 3. Build your war file:
     
-    ant dist
+    ant -f build dist
 
 Step 3. Deploy the project in your servlet container, like [Tomcat](http://tomcat.apache.org/)
 
