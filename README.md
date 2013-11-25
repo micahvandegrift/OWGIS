@@ -44,8 +44,8 @@ Step 2. Create new project in Netbeans
     Point to the root folder of OWGIS and Change project name to 'OWGISTemplate' (Next)
     Select your servlet container  (Next)
     If not set by default set:
-    Web Pages Folder -> web
-    Web-INF Folder  -> WEB-INF
+        Web Pages Folder -> web
+        Web-INF Folder  -> WEB-INF
     Libraries Folder -> libraries (Next)
     Source package folders -> src/java (Finish)
 
