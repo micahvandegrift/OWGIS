@@ -51,9 +51,8 @@ Step 2. Create new project in Netbeans
 
 Step 3. Common Netbeans configuration (Project Properties)
 
-    Sources -> Change source to JDK 7
-
-    Run -> Relative URL -> /mapviewer (Ok):w
+    + Sources -> Change source to JDK 7
+    + Run -> Relative URL -> /mapviewer (Ok):w
 
 Once OWGIS template is working just modify the configuration
 files for you convenience.
