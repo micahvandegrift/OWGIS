@@ -9,8 +9,8 @@ WebGIS sites by automatically writing HTML and JavaScript code.
 
 We built OWGIS because we wanted an easy way to 
 publish scientific maps on the web. OWGIS provides a
-nice interface that can be easily customized and it 
-can be used to publish any type of georeferenced data served
+self-contained WebGIS sites that can be easily customized.
+OWGIS can publish any type of georeferenced data served
 by an WMS server like [Geoserver](http://geoserver.org)
 or by an [ncWMS](http://www.resc.rdg.ac.uk/trac/ncWMS/) sever. 
 The later uses an extension of the WMS standard to 
