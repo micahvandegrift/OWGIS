@@ -46,8 +46,8 @@ Step 2. Create new project in Netbeans
     If not set by default set:
         Web Pages Folder -> web
         Web-INF Folder  -> WEB-INF
-    Libraries Folder -> libraries (Next)
-    Source package folders -> src/java (Finish)
+        Libraries Folder -> libraries 
+        Source package folders -> src/java (Finish)
 
 Step 3. Common Netbeans configuration (Project Properties)
 
@@ -56,3 +56,17 @@ Step 3. Common Netbeans configuration (Project Properties)
 
 Once OWGIS template is working just modify the configuration
 files for you convenience.
+
+## Community 
+## Authors
+
+** Olmo Zavala**
++ <https://github.com/olmozavala>
++ <https://olmozavala.com>
+
+** Arsalan Ahmed **
++ <https://github.com/arsa666>
+
+## License
+OWGIS is licensed under the MIT Open Source license. 
+For more information, see the LICENSE file in this repository.
