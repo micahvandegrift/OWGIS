@@ -7,22 +7,24 @@ For more info please visit [owgis.org](http://owgis.org)!
 OWGIS is a Java web application that creates 
 WebGIS sites by automatically writing HTML and JavaScript code. 
 
-We built OWGIS because we want it an easy way to 
+We built OWGIS because we wanted an easy way to 
 publish scientific maps on the web. OWGIS provides a
 nice interface that can be easily customized and it 
 can be used to publish any type of georeferenced data served
 by an WMS server like [Geoserver](http://geoserver.org)
 or by an [ncWMS](http://www.resc.rdg.ac.uk/trac/ncWMS/) sever. 
+The later uses an extension of the WMS standard to 
+serve 3D or 4D data stored as [NetCDF](http://www.unidata.ucar.edu/software/netcdf/) files.
 
 The default template of OWGIS can be tested 
-<a href="http://owgis.servehttp.com:8080/OWGISTemplate/mapviewer"> here</a>,
-and it will look similar to the following screenshot.
-<img src="http://owgis.org/images/galery/DemoConfig.png"  title="OWGIS template">
-![alt tag](http://owgis.org/images/galery/DemoConfig.png)
+<a href="http://owgis.servehttp.com:8080/OWGISTemplate/mapviewer"> here</a>.
 
 Each WebGIS site is configured by two types of files, a 
 Java properties file stored at `web/WEB-INF/conf/MapViewConfig.properties`
 and XML files located at `web/layers/TestLayers.xml`.
+With these two files you can create new maps with many layers
+and customize the look of your map. 
+
 For a detailed information on the configuration files please
 read the tutorials section at [owgis.org](http://owgis.org).
 
@@ -30,6 +32,10 @@ read the tutorials section at [owgis.org](http://owgis.org).
 Step 1. Clone the repository:
  
     git clone git@github.com:olmozavala/OWGIS.git
+
+Step 2. Build your war file:
+
+Setp 3. Deploy the project in your servlet container, like [Tomcat](http://tomcat.apache.org/)
 
 ## Netbeans
 Building a Netbeans project for OWGIS is very easy. 
