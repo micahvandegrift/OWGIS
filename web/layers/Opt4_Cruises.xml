@@ -72,7 +72,7 @@
 		<layer Menu='cruises,id,wb-1310' EN='Cruise WB-1310' name='postgis:all_cruises' CQL="id='WB-1310'" />
 	</MainLayers>
 
-    <VectorLayers BBOX="-120,-59.983333333333,-10,50.0166666666666"
+    <OptionalLayers BBOX="-120,-59.983333333333,-10,50.0166666666666"
         format="image/jpeg"  server="http://viewer.coaps.fsu.edu/geoserver/wms"
         tiled="true" trans_effect="none" vectorLayer="true">
 
@@ -100,5 +100,5 @@
 		<layer Menu='cruises,2012,wb1306' EN='Cruise WB1306' name='postgis:all_cruises' CQL="id='WB1306'" />
 		<layer Menu='cruises,2012,wb-1307' EN='Cruise WB-1307' name='postgis:all_cruises' CQL="id='WB-1307'" />
 		<layer Menu='cruises,2013,wb-1310' EN='Cruise WB-1310' name='postgis:all_cruises' CQL="id='WB-1310'" />
-	</VectorLayers>
+	</OptionalLayers>
 </MenuConf>

@@ -11,12 +11,12 @@
     </MainLayers>
 
     <!-- __________________ Optional menus _____________  -->
-    <VectorLayers BBOX="-120,-59.983333333333,-10,50.0166666666666" 
+    <OptionalLayers BBOX="-120,-59.983333333333,-10,50.0166666666666" 
         format="image/jpeg"  server="http://viewer.coaps.fsu.edu/geoserver/wms"
         tiled="true" trans_effect="none" vectorLayer="true">
 
         <layer Menu='drif' EN='Drifters' name='postgis:drifters_view' />
 
-    </VectorLayers>
+    </OptionalLayers>
 </MenuConf>
 

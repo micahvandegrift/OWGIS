@@ -10,7 +10,7 @@
 	</MainLayers>
     
     <!-- Sites by event type -->
-	<VectorLayers BBOX="-120,-59.983333333333,-10,50.0166666666666" 
+	<OptionalLayers BBOX="-120,-59.983333333333,-10,50.0166666666666" 
 				format="image/jpeg"  server="http://viewer.coaps.fsu.edu/geoserver/wms"
 				tiled="true" trans_effect="none" vectorLayer="true">
 
@@ -24,6 +24,6 @@
 		<layer Menu="sites,plankton" 	EN="Sites with Plankton events" name="postgis:sites_events" CQL="event_type='Plankton'" style="YellowSites"/>
 		<layer Menu="sites,sediment" 	EN="Sites with Sediment events" name="postgis:sites_events" CQL="event_type='Sediment'" style="RedSites"/>
 		<layer Menu="sites,survey" 	EN="Sites with Survey events" name="postgis:sites_events" CQL="event_type='Survey'" style="BlueSites"/>
-	</VectorLayers>
+	</OptionalLayers>
 </MenuConf>
 
