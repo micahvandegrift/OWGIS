@@ -95,6 +95,7 @@ public class NetCDFAnimationServlet extends HttpServlet {
 			String finalRequest = layer.getServer()+ "?";
 			finalRequest+= "REQUEST=GetMap&";
 			finalRequest+= "VERSION=1.3.0&";
+			finalRequest+= "NUMCOLORBANDS=250&";
 			finalRequest+= "SRS="+layer.getProjection()+"&";
 			finalRequest+= "CRS=CRS:84&";// WHAT IS THIS PARAMETER
 

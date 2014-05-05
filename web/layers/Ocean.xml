@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<MenuConf
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:noNamespaceSchemaLocation='file:/home/olmozavala/Dropbox/OWGISV1_Projects/OWGIS_Takis/web/layers/schema.xsd'>
+	<MenuEntries>
+		<MenuEntry ID="ocn" EN="Ocean" ES="Oceano"/>
+		<MenuEntry ID="zeta" EN="Sea Surface Temp" ES="Temperatura Superficial"/>
+		<MenuEntry ID="salt" EN="Salinity" ES="Salinidad"/>
+		<MenuEntry ID="temp" EN="Temperature" ES="Temperatura"/>
+		<MenuEntry ID="bathy" EN="Bathymetry" ES="Batimetria"/>
+		<MenuEntry ID="vel" EN="Velocity" ES="Velocidad"/>
+		<MenuEntry ID="lonu" EN="Long-u" ES="lon-u"/>
+		<MenvEntry ID="lonv" EN="Long-v" ES="lon-v"/>
+		<MenvEntry ID="ubar" EN="U Vertically integrated" ES="Integrado vertical U"/>
+		<MenvEntry ID="vbar" EN="V Vertically integrated" ES="Integrado vertical V"/>
+		<MenvEntry ID="u" EN="U-momentum" ES="Componente u"/>
+		<MenvEntry ID="v" EN="V-momentvm" ES="Componente v"/>
+	</MenuEntries>
+
+	<!--
+	<VectorLayers BBOX="" vectorLayer="" format="" proj="" server="" trans_effect="" tiled="" style="">
+		<layer name="" Menu="" featureInfo="" title="" BBOX="" vectorLayer="" format="" proj="" server="" trans_effect="" tiled="" selected="" style=""></layer>
+	</VectorLayers> -->
+
+	<!--Ocean layers-->
+	<MainLayers BBOX="-98.0,18.09164810180664,-76.400024,31.960647583007812" 
+				format="image/gif"  server="http://146.201.212.175:8080/ncWMS/wms"
+				ncWMS="true"  proj="EPSG:4052" >  
+		<layer Menu="ocn,zeta" EN="Sea surface temperature"
+			   ES="Temperatura superficial del mar" name="ocn/zeta"  />
+		<layer Menu="ocn,salt" EN="Gulf of Mexico salinity"
+			   ES="Salinidad" name="ocn/salt"  />
+		<layer Menu="ocn,temp" EN="Gulf of Mexico Temperature"
+			   ES="Temperatura" name="ocn/temp"  />
+		<layer Menu="ocn,bathy" EN="Bathymetry at RHO-Points"
+			   ES="Batimetria en puntos Rho" name="ocn/h"  />
+		<layer Menu="ocn,vel,ubar" EN="U Vertically integrated"
+			   ES="Integrado vertical u" name="ocn/ubar"  />
+		<layer Menu="ocn,vel,vbar" EN="V Vertically integrated"
+			   ES="Integrado vertical v" name="ocn/vbar"  />
+		<layer Menu="ocn,vel,u" EN="U-momentum"
+			   ES="Componente u" name="ocn/u"  />
+		<layer Menu="ocn,vel,v" EN="V-momentvm"
+			   ES="Componente v" name="ocn/v"  />
+	</MainLayers>
+
+</MenuConf>

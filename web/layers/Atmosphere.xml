@@ -1,0 +1,46 @@
+<MenuConf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+	<!-- This are the menus that are available to display entries -->
+	<MenuEntries>
+		<MenuEntry ID="atm" EN="Atmosphere" ES="Atmosfera"/>
+		<MenuEntry ID="u10" EN="U10" ES="U10"/>
+		<MenvEntry ID="v10" EN="V10" ES="V10"/>
+		<MenvEntry ID="t2" EN="T2" ES="T2"/>
+		<MenvEntry ID="psfc" EN="Pressure" ES="Presion"/>
+
+		<MenuEntry ID="states" EN="US states" ES="Estados"/>
+		<MenuEntry ID="shore" EN="Shore lines" ES="Linea de costa"/>
+	</MenuEntries>
+
+	<BackgroundLayers BBOX="-180,90,-90,180" server="http://viewer.coaps.fsu.edu/geoserver/wms">
+		<layer name="comm:pyrResult512" featureInfo="comm:gebco"/> 
+	</BackgroundLayers>
+
+	
+	<!-- Atmosphere layers -->
+	<MainLayers BBOX="-98.0,18.09164810180664,-76.400024,31.960647583007812" 
+				format="image/gif"  server="http://146.201.212.175:8080/ncWMS/wms"
+				ncWMS="true"  proj="EPSG:4052" >  
+		<layer Menu="atm,u10" EN="Wind velocities at 10m above sea level, U component"
+			   ES="Velocidad de viento a 10m en U" name="atm/U10"  />
+		<layer Menu="atm,v10" EN="Wind velocities at 10m above sea level, V component"
+			   ES="Velocidad de viento a 10m en V" name="atm/V10"  />
+		<layer Menu="atm,t2" EN="Temperature at 2m"
+			   ES="Temperatura a 2mts" name="atm/T2" />
+		<layer Menu="atm,psfc" EN="SFC Pressure"
+			   ES="Presion" name="atm/PSFC"  proj="EPSG:4052" />
+	</MainLayers>
+
+	<!-- Optional layers -->
+	<OptionalLayers BBOX="-171.79111060289117,18.916190000000142,-66.96465999999998,71.35776357694175"
+				  server="http://owgis.servehttp.com:8080/geoserver/wms"
+				  vectorLayer="true"> 
+		<layer Menu="states" name="demo:us_states" />
+	</OptionalLayers>
+
+	<!-- Optional layers -->
+	<OptionalLayers BBOX="-180,-90,180,90"
+				  server="http://localhost:8080/geoserver/wms" vectorLayer="true"> 
+		<layer Menu="shore" name="comm:shorelines" selected="true"/>
+	</OptionalLayers>
+
+</MenuConf>

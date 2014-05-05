@@ -93,7 +93,7 @@ function handleDrawing(line)
     
     url = url + mainLayer + "&CRS=" + CRS + "&TIME=" + time;
     url = url +"&LINESTRING=" + lat_lon + "&FORMAT=image/png&COLORSCALERANGE=auto";
-    url = url + "&NUMCOLORBANDS=254&LOGSCALE=false&PALETTE=" + mappalette;
+    url = url + "&NUMCOLORBANDS=250&LOGSCALE=false&PALETTE=" + mappalette;
 
     popUp(url,400,600);
           

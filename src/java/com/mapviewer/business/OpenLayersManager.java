@@ -310,7 +310,10 @@ public class OpenLayersManager {
 				+ "layers: '" + actualLayer.getName() + "',";
 
 
+
 		if (actualLayer.isNetCDF()) {
+
+			layersScript += "numcolorbands: 250,";
 			if (actualLayer.getMaxColor() != -1 && actualLayer.getMinColor() != -1) {
 				layersScript += "colorscalerange: '" + actualLayer.getMinColor() + "," + actualLayer.getMaxColor() + "',";
 			}
