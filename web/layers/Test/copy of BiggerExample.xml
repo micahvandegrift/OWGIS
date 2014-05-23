@@ -15,7 +15,7 @@
             />
     </MainLayers>
     <MainLayers BBOX="-125.02083333333,24.062499999999996,-66.47916666198,49.937500002069996" 
-                format="image/gif"  server="http://146.201.212.61/ncWMS/wms"
+                format="image/png"  server="http://146.201.212.61/ncWMS/wms"
                 tiled="true" ncWMS="true" mincolor="10" maxcolor="34" >  
         <layer Menu="menuId,menuId4" EN="Gulf of Mexico temperature" name="hycom2013/temperature"  />
     </MainLayers>
