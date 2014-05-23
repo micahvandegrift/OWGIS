@@ -28,10 +28,11 @@
         <link href="${basepath}/common/CSS/calendar/reduce-spacing.css" rel="stylesheet" type="text/css"/>
         <link href="${basepath}/common/CSS/calendar/steel/steel.css" rel="stylesheet" type="text/css"/>
 
-        <!--<script type="text/javascript" src="${basepath}/common/JS/openlayers/OpenLayers.js"> </script>-->
-		<script type="text/javascript" src="http://openlayers.org/api/OpenLayers.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script type="text/javascript" src="${basepath}/common/JS/vendor/OpenLayers-2.13.1/OpenLayers.js"> </script>
+		<script src="${basepath}/common/JS/vendor/jquery-1.11.1.min.js"></script>
+		<script src="${basepath}/common/JS/vendor/jquery-ui-1.10.4/js/jquery-ui-1.10.4.min.js"></script>
+		<!--<script type="text/javascript" src="http://openlayers.org/api/OpenLayers.js"></script>-->
+		<!--<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>-->
 
         <script type="text/javascript" src="${basepath}/common/JS/utilities.js"> </script>
 		<script type="text/javascript" src="${basepath}/common/JS/mapDisplay/InterfaceDependent.js"> </script>
