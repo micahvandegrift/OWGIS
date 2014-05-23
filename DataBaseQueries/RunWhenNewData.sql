@@ -1,7 +1,7 @@
 
 --------------- Sites table -----------------------
 
--- Update the geom column with 
+-- Update the geom column of the sites with 
 UPDATE sites SET geom = ST_GeomFromText('SRID=4326;POINT('|| longitude ||' '|| latitude ||')') 
 
 
