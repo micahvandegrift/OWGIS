@@ -76,8 +76,9 @@ Step 3. Common Netbeans configuration (in Project Properties)
     Sources -> Change source to JDK 7 if necessary
     Run -> Relative URL -> /mapviewer (Ok)
 
-Once OWGIS template is working just modify the configuration
-files for you convenience.
+Once OWGIS template is working, you can modify the layers shown
+in the map as well as the look of the website by following the
+documentation at [owgis.org](http://owgis.org).
 
 ## Community 
 ## Authors
