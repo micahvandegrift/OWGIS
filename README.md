@@ -29,6 +29,7 @@ For a detailed information on the configuration files please
 read the tutorials section at [owgis.org](http://owgis.org).
 
 [Quick start using ant](## Quick Start using ant)
+[Quick start using Netbeans](## Quick start using Netbeans)
 
 ## Quick Start using ant
 Step 1. Clone the repository:
