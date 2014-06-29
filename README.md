@@ -28,7 +28,7 @@ and customize the look of your map.
 For a detailed information on the configuration files please
 read the tutorials section at [owgis.org](http://owgis.org).
 
-## Quick Start
+## Quick Start using ant
 Step 1. Clone the repository:
  
     git clone git@github.com:olmozavala/OWGIS.git
@@ -45,12 +45,12 @@ Step 3. Deploy the project in your servlet container, like [Tomcat](http://tomca
 
 Step 4. Test your OWGIS Template normally at <http://localhost:8080/OWGISTemplate/mapviewer>
 
-## Netbeans
+## Quick start using Netbeans
 Building a Netbeans project for OWGIS is very easy. 
 
 Step 1. Clone the repository:
 
-    git clone git@github.com:olmozavala/OWGIS.git
+    git clone git@github.com:olmozavala/OWGIS.git OWGISTemplate
 
 Step 2. Create new project in Netbeans
 
