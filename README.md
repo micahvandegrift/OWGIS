@@ -31,7 +31,7 @@ read the tutorials section at [owgis.org](http://owgis.org).
 ## Quick Start using ant
 Step 1. Clone the repository:
  
-    git clone git@github.com:olmozavala/OWGIS.git
+    git clone https://github.com/olmozavala/OWGIS.git OWGISTemplate
 
 Step 2. Edit `buildTemplate.xml` to match your paths, mainly the Tomcat folder.
 
@@ -50,7 +50,7 @@ Building a Netbeans project for OWGIS is very easy.
 
 Step 1. Clone the repository:
 
-    git clone git@github.com:olmozavala/OWGIS.git OWGISTemplate
+    git clone https://github.com/olmozavala/OWGIS.git OWGISTemplate
 
 Step 2. Create new project in Netbeans
 
