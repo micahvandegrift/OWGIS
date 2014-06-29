@@ -30,9 +30,9 @@ read the tutorials section at [owgis.org](http://owgis.org).
 
 # Quick Start 
 
-[Quick start using ant](##Ant)
+[Quick start using ant](#ant)
 
-[Quick start using Netbeans](##.Netbeans)
+[Quick start using Netbeans](#netbeans)
 
 ## Ant
 Step 1. Clone the repository:
