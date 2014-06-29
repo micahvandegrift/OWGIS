@@ -28,6 +28,8 @@ and customize the look of your map.
 For a detailed information on the configuration files please
 read the tutorials section at [owgis.org](http://owgis.org).
 
+[Quick start using ant][## Quick Start using ant]
+
 ## Quick Start using ant
 Step 1. Clone the repository:
  
@@ -52,23 +54,23 @@ Step 1. Clone the repository:
 
     git clone https://github.com/olmozavala/OWGIS.git OWGISTemplate
 
-Step 2. Create new project in Netbeans
+Step 3. Create new project in Netbeans
 
-    Delete `buildTemplate.xml` file
-    File -> New Project (Next)
+    Delete `buildTemplate.xml` file (from OWGISTemplate directory)
+    File -> New Project (Ctrl-Shift-N)
     Java Web -> Web Application with Existing Sources (Next)
-    Point to the root folder of OWGIS and Change project name to 'OWGISTemplate' (Next)
-    Select your servlet container  (Next)
+    Location: point to the root folder "OWGISTemplate" (Next)
+    Select your server (Tomcat, JBOSS, etc.) (Next)
     If not set by default set:
-        Web Pages Folder -> web
-        Web-INF Folder  -> WEB-INF
-        Libraries Folder -> libraries 
-        Source package folders -> src/java (Finish)
+        Web Pages Folder -> OWGISTemplate/web
+        Web-INF Folder  -> OWGISTemplate/web/WEB-INF
+        Libraries Folder -> OWGISTemplate/libraries 
+        Source package folders -> OWGISTemplate/src/java (Finish)
 
-Step 3. Common Netbeans configuration (Project Properties)
+Step 3. Common Netbeans configuration (in Project Properties)
 
-    Sources -> Change source to JDK 7
-    Run -> Relative URL -> /mapviewer (Ok):w
+    Sources -> Change source to JDK 7 if necessary
+    Run -> Relative URL -> /mapviewer (Ok)
 
 Once OWGIS template is working just modify the configuration
 files for you convenience.
